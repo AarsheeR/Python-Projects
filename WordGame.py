@@ -1,0 +1,16 @@
+'''
+Name: Aarshee Rahman
+Start Date: 2/13/24
+End Date: 2/13/24
+Description: This program is a word game where the user must guess the word that I am thinking about and they will be told whether they are right or wrong. 
+
+'''
+
+userinp = str(input("Guess the word I am thinking: "))
+
+#If Else Statements
+if userinp == "magic" :
+    print("Congratulations! You got the word!")
+else: 
+    print("Sorry! You did not get the word.")
+
