@@ -1,0 +1,47 @@
+'''
+Name: Aarshee Rahman
+Start Date: 2/28/24
+End Date: 2/29/24
+Description: olympian pt2
+'''
+
+ 
+# Main function
+def main():
+     
+    # Prompt user for input
+    num_gold_medals = float(input("Enter the number of gold medals won: "));
+
+
+    # Calculate prize money based on the number of gold medals
+    if num_gold_medals == 1 or num_gold_medals == 2 or num_gold_medals == 3 or num_gold_medals == 4 or num_gold_medals == 5: 
+        if num_gold_medals == 1:
+            prize_money = 75000;
+        if num_gold_medals == 2:
+            prize_money = 2 * 75000;
+        if num_gold_medals == 3:
+            prize_money = 3 * 75000;
+        if num_gold_medals == 4:
+            prize_money = 4 * 75000;
+        if num_gold_medals == 5:
+            prize_money = 5 * 75000;
+    else:
+        prize_money = "Invalid";
+
+
+    # Display the result
+    if prize_money == "Invalid":
+        print("Invalid input. Please enter a whole number between 1 and 5."); 
+        
+
+    else:
+        print("Congratulations! Prize money: $" + str(prize_money));
+
+
+    main();
+
+
+# Call the main function
+if __name__ == "__main__":
+    main();
+
