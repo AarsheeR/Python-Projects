@@ -30,6 +30,8 @@ def main():
     else:
         print("Prize money: $", prize_money)
 
+        main()
+
 # Call the main function
 if __name__ == "__main__":
     main()
