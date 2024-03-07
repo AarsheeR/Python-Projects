@@ -1,0 +1,43 @@
+'''
+Name: Aarshee Rahman
+Start Date: 3/5/24
+End Date: 3/5/24
+Description: This tutorial is to learn how to use for loops.
+'''
+
+#Ask for the number of grades
+def AskInput():
+    global numgrades #variable is global-used throughout the program
+    
+    numgrades = float(input("How many grades will you average? "))
+    
+    checknum = numgrades % 1;
+    if (numgrades == 0 or checknum != 0):
+        print("Enter a valid number!")
+        AskInput();
+    else:
+        AverageGrade();
+    
+#Calculate the average 
+def AverageGrade():
+    average = 0;
+    for i in range(0,int(numgrades)):
+        gradeinput = float(input("Enter a grade: "));
+        if (gradeinput >= 0 and gradeinput <= 100):
+            average = average + gradeinput
+        else:
+            print("Try again!")
+            AverageGrade()
+            
+    average = average / numgrades
+    print ("The average is " + str(average))
+    
+    AskInput();
+
+#Define main  
+def main():
+    AskInput()
+   
+#Call to main function 
+if __name__== "__main__":
+    main();
