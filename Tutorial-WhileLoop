@@ -1,0 +1,39 @@
+'''
+Name: Aarshee Rahman
+Start Date: 3/7/24
+End Date: 3/7/24
+Description: This tutorial is to learn how to use while loops.
+'''
+
+#Initializing the program
+def main():
+    Initialize();
+
+#Setting up the program
+def Initialize():
+    wordguess = "apple, pear, cucumbers, shoe, watermelon";
+    msg = "Try to guess my words. \nYou have only 4 attempts."
+    print(msg + "\n" + wordguess);
+    AskInput();
+
+#Asking the user to guess the code
+def AskInput():
+    userinput = "";
+    attempts = 4;
+    wordgame = "apple";
+        
+    userinput = str(input("Enter a word: "));
+    while(attempts > 1 and userinput != "apple"):
+        attempts -= 1;
+        print("You have " + str(attempts) + " attempts left");
+        userinput = str(input("Enter a word: "));
+        
+    if (attempts == 1 and userinput != "apple"):
+        print("You lost!");
+    else:
+        print("Congrats!");
+        
+
+#Call to main 
+if __name__ == "__main__":
+    main();
