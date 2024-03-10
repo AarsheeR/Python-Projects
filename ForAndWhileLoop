@@ -1,0 +1,54 @@
+'''
+Name: Aarshee Rahman
+Start Date: 3/8/24
+End Date: 3/8/24
+Description: This program is to print the numbers from 35 to 45, inclusive, using a for loop.
+'''
+
+#Define Main
+def main():
+    Initialize();
+    
+def Initialize():
+    output = ""
+    for i in range(35, 46):
+        output = output + str(i) + " "
+        
+    print(output)
+    
+#Call to main
+if __name__ == "__main__":
+    main();                                                      
+    
+    
+    
+    
+    
+                                    
+'''
+Name: Aarshee Rahman
+Start Date: 3/8/24
+End Date: 3/8/24
+Description: This program is to print the numbers from 35 to 45, inclusive, using a for loop.
+'''
+
+# Define Main
+def main():
+    Initialize()
+    
+def Initialize():
+    output = ""
+    i = 35
+    while i < 46:
+        output = output + str(i) + " "
+        i = i + 1
+        
+    print(output)
+    
+#Call to main
+if __name__ == "__main__":
+    main();               
+    
+    
+    
+    
