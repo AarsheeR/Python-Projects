@@ -1,0 +1,48 @@
+'''
+Name: Aarshee Rahman
+Start Date: 3/11/24
+End Date: 3/11/24
+Description: This program will prompt the user to input the number of gold medals won by an Olympian. Based on the input, it will calculate and display the prize money earned, with $75,000 awarded for each gold medal.
+'''
+
+# Function to prompt user for input
+def get_num_gold_medals():
+    global num_gold_medals
+    num_gold_medals = float(input("Enter the number of gold medals won: "))
+    calculate_prize_money()
+
+# Function to calculate prize money based on the number of gold medals
+def calculate_prize_money():
+    global prize_money
+    if num_gold_medals == 1 or num_gold_medals == 2 or num_gold_medals == 3 or num_gold_medals == 4 or num_gold_medals == 5: 
+        if num_gold_medals == 1:
+            prize_money = 75000;
+        if num_gold_medals == 2:
+            prize_money = 2 * 75000;
+        if num_gold_medals == 3:
+            prize_money = 3 * 75000;
+        if num_gold_medals == 4:
+            prize_money = 4 * 75000;
+        if num_gold_medals == 5:
+            prize_money = 5 * 75000;
+    else:
+        prize_money = "Invalid"
+    display_result()
+
+# Function to display the result
+def display_result():
+    if prize_money == "Invalid":
+        print("Invalid input. Please enter a number between 1 and 5.")
+    else:
+        print("Prize money: $" + str(prize_money))
+    main()
+
+# Main function
+def main():
+    get_num_gold_medals()
+
+
+# Call the main function
+if __name__ == "__main__":
+    main()
+
