@@ -1,0 +1,30 @@
+
+def main():
+  AskHowMany();
+
+#Ask integer ammount
+def AskHowMany():
+  global howmany 
+  howmany = float(input("How many integers do you want to check?:"));
+  checkval = howmany % 1 
+  if checkval == 0 and howmany > 0:
+    Calculate();
+  else: 
+    print("Invalid input. Please enter a postive whole number.");
+    AskHowMany();
+
+#Ask integer and calculate
+def Calculate():
+  for i in range(0,int(howmany)):
+    integer = int(input("Enter an integer: "));
+    divisible = integer % 3;
+    if divisible == 0:
+      print("Your integer is disible by 3.");
+    else: 
+      print("Your integer is not divisible by 3.");
+
+AskHowMany();
+
+#Call to main
+if __name__ == "__main__":
+  main();
