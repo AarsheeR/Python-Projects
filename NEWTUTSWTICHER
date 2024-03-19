@@ -1,0 +1,55 @@
+'''
+Name: Aarshee Rahman
+Start Date: 3/18/24
+End Date: 3/18/24
+Description: This program is to learn how to use switchers.
+'''
+
+def main():
+    MainDisplay();
+    
+def MainDisplay():
+    global num1, num2
+    menumsg = "Calculator\n----------\n1-Addition\n2-Subtraction\n3-Multiplication\n4-Division";
+    print(menumsg);
+    num1 = float(input("Enter a number: "));
+    num2 = float(input("Enter another number: "));
+    Options();
+    
+def Options():
+    whichoption = int(input("Select an operation: "));
+    switcher = {
+        1: Addition(),
+        2: Subtraction(),
+        3: Multiplication(),
+        4: Division()
+        }
+    whichselect = switcher.get(whichoption, "Invalid");
+    if (whichselect == "Invalid"):
+        print("Invalid...Please enter another number: ");
+        Options();
+    else: 
+        result = whichselect;
+        print(result);
+        main();
+        
+def Addition():
+    answer = num1 + num2;
+    return answer;
+
+def Subtraction():
+    answer = num1 - num2;
+    return answer;
+
+def Multiplication():
+    answer = num1 * num2;
+    return answer;
+
+def Division():
+    answer = num1 / num2;
+    return answer;
+
+if __name__ == "__main__":
+    main();
+    
+    
