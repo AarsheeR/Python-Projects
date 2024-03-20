@@ -1,0 +1,19 @@
+#For numbers 1-4
+def CheckSelection():
+    whichoption = str(input("Select an operation: "));
+    numlen = len(whichoption);
+    if (numlen > 2 or whichoption [0:1] == "-"):
+        print("Invalid...Please enter another number: ");
+        CheckSelection();
+    else:
+        newnum = ord(whichoption);
+        print(newnum)
+        if (int(newnum) < 49 or int(newnum) > 52 ):
+            print("Invalid...Please enter another number:");
+        else:
+            print("...");        
+    
+def main():
+    CheckSelection()
+if __name__ == "__main__":
+    main();
