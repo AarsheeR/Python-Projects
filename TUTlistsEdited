@@ -1,7 +1,7 @@
 '''
 Name: Aarshee Rahman
 Start Date: 3/21/24
-End Date: 3/21/24
+End Date: 3/22/24
 Description: This program is to learn how to manage data using lists.
 '''
 
@@ -23,9 +23,12 @@ def PrintList():
     listlen = len(list1);
     for i in range(0,listlen):
         print(list1[i]);
-        print(list2[i]);
         print(list3[i]);
         print(list4[i]);
+        
+    listlen4 = len(list2);
+    for i in range(0,listlen4):
+        print(list2[i]);
         
     #Using while loop 
     print("=====while loop===="); 
@@ -34,9 +37,15 @@ def PrintList():
     listlen = listlen - 1;
     while(listlen2<=listlen):
         print(list1[listlen2]);
-        print(list2[listlen2]);
         print(list3[listlen2]);
         print(list4[listlen2]);
+        listlen2 = listlen2 + 1
+        
+    listlen4 = len(list2);
+    listlen2 = 0
+    listlen4 = listlen4 - 1;
+    while(listlen2<=listlen4):
+        print(list2[listlen2]);
         listlen2 = listlen2 + 1
     
 def main():
