@@ -1,0 +1,48 @@
+'''
+Name: Aarshee Rahman
+Start Date: 3/21/24
+End Date: 3/21/24
+Description: This program is to learn how to manage data using lists.
+'''
+
+def PrintList():
+    list1 = ["course","period","room"]; #string
+    list2 = [1,2,3,4,5]; #numeric
+    list3 = [True,False,True]; #boolean
+    list4 = ["abc",34,True]; #mix
+    
+    #Using print() function
+    print("=====print()function=====");
+    print(list1);
+    print(list2);
+    print(list3);
+    print(list4);
+    
+    #Using for loop
+    print("=====for loop=====");
+    listlen = len(list1);
+    for i in range(0,listlen):
+        print(list1[i]);
+        print(list2[i]);
+        print(list3[i]);
+        print(list4[i]);
+        
+    #Using while loop 
+    print("=====while loop===="); 
+    listlen = len(list1);
+    listlen = listlen - 1;
+    while(listlen>=0):
+        print(list1[listlen]);
+        print(list2[listlen]);
+        print(list3[listlen]);
+        print(list4[listlen]);
+        listlen = listlen - 1
+    
+def main():
+    PrintList();
+    
+if __name__ == "__main__":
+    main();
+    
+    
+    
