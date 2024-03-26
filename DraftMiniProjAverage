@@ -1,0 +1,62 @@
+'''
+'''
+
+def CalculateAverage():
+    global total, average, grades
+    total = sum(grades)
+    average = total / len(grades)
+    
+    LetterGrade(average);
+
+def LetterGrade(average):
+    switcher = {
+        'A': 90,
+        'B': 80,
+        'C': 70,
+        'D': 60
+    }
+    gradevalid = False
+    for grade, score in switcher.items():
+        if average >= score and gradevalid == False:
+            print("Letter Grade:", grade)
+            gradevalid = True
+        
+    if gradevalid != True:
+            print("Letter Grade: F")
+    
+    GradeScale(average)
+
+def GradeScale(average):
+    switcher = {
+        '4': 90,
+        '3': 80,
+        '2': 70,
+        '1': 60
+    }
+    gradevalid = False
+    for grade, score in switcher.items():
+        if average >= score and gradevalid == False:
+            print("Grade Scale:", grade)
+            gradevalid = True
+    
+    if gradevalid != True:
+            print("Grade Scale: 0")
+
+def main():
+    AskingHowMany();
+    
+def AskingHowMany():
+    global grades, numgrades
+    grades = []
+    numgrades = int(input("Enter the number of grades you would like to input: "))
+    
+    for i in range(numgrades):
+        grade = float(input("Enter a grade : "))
+        grades.append(grade)   
+    
+    CalculateAverage();
+    
+
+
+if __name__ == "__main__":
+    main()
