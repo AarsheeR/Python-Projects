@@ -1,0 +1,26 @@
+def main():
+    AskingHowMany();
+    
+    
+def AskingHowMany():
+    global average
+    average = int(input("Enter num: "))
+    LetterGrade();
+
+def LetterGrade():
+    switcher = {
+        'A': 90,
+        'B': 80,
+        'C': 70,
+        'D': 60
+    }
+    for grade, score in switcher.items():
+        if average >= score:
+            print("Letter Grade:", grade)
+            return
+    else:
+            print("Letter Grade: F")
+
+if __name__ == "__main__":
+    main()
+    
