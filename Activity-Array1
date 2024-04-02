@@ -1,0 +1,57 @@
+'''
+Name: Aarshee Rahman
+Start Date: 4/2/24
+End Date: 4/2/24
+Description: This program is to learn how to use arrays.
+'''
+
+def AskInfo():
+    global checking
+    numlist = []
+    numgrades = str(input("How many grades will you average? "));
+    numlist = list(numgrades);
+        
+    for i in range(len(numlist)):
+        numascii = ord(numlist[i]);
+        if (numascii < 48 or numascii > 57):
+            print("Please enter a positive whole number.");
+            AskInfo();
+        else: 
+            checking = True;
+        
+    if (int(numgrades) == 0):
+        print("Bye. Thank you!");
+        AskInfo();
+        
+    if (checking == True):
+        numgrades = int(numgrades);
+        passorfail = CalcAverage(numgrades);
+        print("Your average is", passorfail);
+        main();
+
+def CalcAverage(gradenum):
+    global grades 
+    totalgrade = 0 
+    grades = []
+    
+    for i in range(0,int(gradenum)):
+        entgrade = int(input("Enter a grade:"));
+        grades.append(entgrade);
+        
+    for i in range(len(grades)):
+        totalgrade = totalgrade + grades[i];
+        
+    average = totalgrade / gradenum;
+    return average;
+
+
+def main():
+    AskInfo();
+    
+#Call to Main
+if __name__ == "__main__":
+    main();
+    
+    
+    
+    
