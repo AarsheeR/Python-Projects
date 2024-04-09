@@ -6,11 +6,12 @@ Description: This program is to learn how to use arrays.
 '''
 
 def AskInfo():
-    global checking, numreplace
+    global checking, numreplace, grades, numgrades
     numgrades = str(input("How many grades will you average? "));
     numlist = list(numgrades);
     numreplace = 0
-        
+    grades = [] 
+    
     for i in range(len(numlist)):
         numascii = ord(numlist[i]);
         if (numascii < 48 or numascii > 57):
@@ -25,20 +26,17 @@ def AskInfo():
         
     if (checking == True):
         numgrades = int(numgrades);
-        passorfail = CalcAverage(numgrades);
-        print("Your average is", passorfail);
-        main();
+        CalcAverage();
 
-def CalcAverage(gradenum):
+
+def CalcAverage():
     global grades, numreplace
-    totalgrade = 0 
-    grades = []
     
-    while numreplace < gradenum:
+    while numreplace < numgrades:
         entgrade = str(input("Enter a grade:"));
         if (entgrade == "."):
             print("Please enter a number between 0-100.");
-            CalcAverage(gradenum);
+            CalcAverage();
         gradelist = list(entgrade);
         lengrade = len(entgrade);
         validinp = True;
@@ -48,7 +46,7 @@ def CalcAverage(gradenum):
                 decimalchk = decimalchk + 1
         if (decimalchk > 1):
             print("Please enter a number between 0-100.");
-            CalcAverage(gradenum);
+            CalcAverage();
             
         i = 0;
         while i < lengrade:
@@ -56,23 +54,30 @@ def CalcAverage(gradenum):
             if (numascii < 46 or numascii > 57 or numascii == 47):
                 print("Please enter a number between 0-100.");
                 validinp = False;
-                CalcAverage(gradenum);
+                CalcAverage();
             else: 
                 i = i + 1;
                 
-        if (validinp == True and (0 <= float(entgrade) <= 100)):
+        if (float(entgrade) >= 0 and float(entgrade) <= 100):
+            validinp = True
+        else: 
+            print("Please enter a number between 0-100.");
+            validinp = False;
+            CalcAverage();
+            
+        if (validinp == True):
             grades.append(float(entgrade));
             numreplace = numreplace + 1;
         else:
             print("Please enter a number between 0-100.");        
-            CalcAverage(gradenum);
- 
-        
-    for i in range(len(grades)):
-        totalgrade = totalgrade + grades[i];
-        
-    average = totalgrade / gradenum;
-    return average;
+            CalcAverage();
+    Average();
+
+def Average():
+    totalgrade = sum(grades)        
+    average = totalgrade / numgrades;
+    print("Your average is", "%.2f" % average);
+    main();
 
 
 def main():
