@@ -1,0 +1,31 @@
+'''
+Name: Mumtaza Islam
+Start Date: 4/15/24
+End Date: 4/15/24
+Description: The program is to show how to create Python file! I did it for you baby girl <3
+'''
+
+import os.path
+from os import path
+
+def main():
+    CheckFile();
+    
+def CheckFile():
+    filename = str(input("Enter the file name to confirm if it exists: "));
+    filename = filename + ".pdf"; #you can also put .txt
+    
+    ifexists = bool(path.exists(filename));
+    
+    if (ifexists == False):
+        pythfile = open(filename, "w");
+        print("File created successfully!")
+        pythfile.close()
+    else:
+        print("File exists");
+        
+if __name__ == "__main__":
+    main();
+    
+    
+    
