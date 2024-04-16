@@ -1,8 +1,8 @@
 '''
-Name: Mumtaza Islam
+Name: Aarshee Rahman
 Start Date: 4/15/24
 End Date: 4/15/24
-Description: The program is to show how to create Python file! I did it for you baby girl <3
+Description: The program is to show how to create Python files
 '''
 
 import os.path
@@ -13,12 +13,18 @@ def main():
     
 def CheckFile():
     filename = str(input("Enter the file name to confirm if it exists: "));
-    filename = filename + ".pdf"; #you can also put .txt
+    EXCEL = filename + ".xlsx";
+    PDF = filename + ".pdf";
+    WORD = filename + ".doc";
+    TEXT = filename + ".txt";
     
     ifexists = bool(path.exists(filename));
-    
+
     if (ifexists == False):
-        pythfile = open(filename, "w");
+        pythfile = open(EXCEL, "w");
+        pythfile = open(PDF, "w");
+        pythfile = open(WORD, "w");
+        pythfile = open(TEXT, "w");
         print("File created successfully!")
         pythfile.close()
     else:
@@ -27,5 +33,6 @@ def CheckFile():
 if __name__ == "__main__":
     main();
     
-    
+
+
     
