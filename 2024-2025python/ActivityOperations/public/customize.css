@@ -1,0 +1,56 @@
+body
+{
+	background-color:#FFB6C1;
+}
+
+h1
+{
+	font-family: Cambria;
+	text-align:center;
+	background-color:pink;
+}
+
+p[id="firstpart"]
+{
+	text-align:center;
+}
+
+
+label
+{
+	display:inline-block;
+	width:105px;
+	text-align:center;
+}
+
+label[id="lblmessage"]
+{
+	width:1000px;
+	color:blue;
+	text-align:left;
+}
+
+button
+{
+	display: inline-block;
+	width:10%;
+	margin-left:11%;
+}
+
+
+button[id="btnclr"]
+{
+	display: inline-block;
+	width:10%;
+	margin-left:45%;
+}
+
+h2
+{
+	text-align:center;
+}
+
+input
+{
+	color:#8b0000;
+}

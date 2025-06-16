@@ -1,0 +1,109 @@
+table
+{
+	border-collapse:collapse;
+	margin-left: auto;
+  	margin-right: auto;
+  	width:85%;
+  	font-size:15px;
+}
+hr[id="lineone"]
+{
+    width: 86%; 
+    margin:center;
+    border: 2px solid black; 
+}
+hr[id="linetwo"]
+{
+    width: 85%; 
+    margin:center;
+    border: 1px solid black; 
+}
+td[id="name"],[id="sortedby"]
+{
+	padding-top: 0px;
+    padding-bottom: 0px;
+}
+table[id="generalinfo"]
+{
+	border-collapse:collapse;
+}
+td[id="schoolname"],[id="schoolyr"],[id="schoolterm"]
+{
+	width:26%;
+	color:blue;
+	padding-top:10px;
+}
+table[id="title"]
+{
+	border-color:red;
+	border-bottom: 4px solid red;
+}
+table[id="periodinfo"]
+{
+	width:100%;
+	font-size:11px;
+}
+td[id="studid"]
+{
+	color:#9C192D;
+}
+label[id="lblschooldistrict"],[id="lblschoolyr"],[id="lblschoolterm"],[id="lblstudentid"]
+{
+	color:black;
+	
+}
+
+td[id="class"],[id="teacher"]
+{
+	text-align:left;
+}
+td[id="room"],[id="time"]
+{
+	text-align:right;
+}
+td[id="periodnum"]
+{
+	text-align:center;
+}
+tr[id="bluerow"]
+{
+	margin:left;
+	background-color:#99CCFF;
+}
+
+td[id="head"]
+{
+	height:45px;
+	color:#000080;
+	font-size:150%
+}
+td[id="grid"]
+{
+	height:25px;
+	color:#000080;
+	font-size:110%;
+}
+td[id="hillcresths"]
+{
+	font-family: Arial;
+	font-size:80%;
+}
+
+td[id="head"],[id="grid"],[id="hillcresths"]
+{
+	border:none;
+	text-align:center;
+}
+td[id="headerimager"]
+{
+	padding-left:11%;
+	border:none;
+}
+td[id="headerimagel"]
+{
+	border:none;
+}
+th[id="daynum"]
+{
+	width:16.6%;
+}

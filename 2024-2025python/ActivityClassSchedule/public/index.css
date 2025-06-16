@@ -1,0 +1,33 @@
+body
+{
+	background:#f0f4f8;
+}
+table 
+{
+	background-color: #ffffff; 
+	border-radius: 12px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%; 
+    border-collapse: collapse; 
+}
+
+th 
+{
+    font-size: 27px;
+    padding: 15px; 
+    border-bottom: 2px solid black; 
+    font-weight: bold;
+    text-align: center;
+}
+div[id="verticalimage"] 
+{
+    display: inline block; 
+	text-align:center;
+}
+img[id="sideimg"]
+{
+    width: 75%; 
+    height: auto;
+}

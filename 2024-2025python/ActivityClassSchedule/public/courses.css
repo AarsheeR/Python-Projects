@@ -1,0 +1,40 @@
+div[id="courseinfo"]
+{
+    width: 60%; 
+	margin:auto;
+    padding: 20px;
+    text-align: left; 
+    border: 1px solid black;  
+    background-color:white;
+}
+body
+{
+	background-color:#f0f4f8;
+}
+
+h1, h2 
+{
+    text-align: center; 
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+label {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+
+div[id="verticalimage"] 
+{
+    display: inline block; 
+	text-align:center;
+}

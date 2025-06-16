@@ -1,0 +1,26 @@
+body
+{
+	background-color: #f3eadf ;
+	text-align: center;
+}
+h1
+{
+	font-family: Times New Roman;
+	font-size: 50px;
+	text-align: center;
+}
+label
+{
+	font-family: Times New Roman;
+	font-size: 20px;
+	display: inline-block;
+	text-align: center;
+}
+button
+{
+	font-family: Times New Roman;
+	font-size: 18px;
+	display: inline-block;
+
+	background-color: #ADD8E6;
+}

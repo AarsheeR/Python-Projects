@@ -1,0 +1,177 @@
+<html>
+	<head>
+	    <title>TreasureMania Food Page</title>
+		 <link rel="shortcut icon" type="x-icon" href="logo.png"></link>
+	    <link rel="stylesheet" href="food.css"> 
+	    <script src="food.js"></script>
+	</head>
+	<body>
+		<table>
+	        <tr>
+	            <td id="sidemenutable" rowspan="2">  
+		            <div id="sidemenu">
+		            <label id="usermsg"></label><br>
+						<a id="home" href="home.html">Home</a>
+				    
+					    <ul id="menu">
+					        <li id="mens">
+					            <a id="mens-link" href="mengeneral.html">Mens</a>
+					            <ul id="submenu-mens">
+					                <li id="tops"><a id="tops-link" href="mentop.html">Tops</a></li>
+					                <li id="bottoms"><a id="bottoms-link" href="menbottom.html">Bottoms</a></li>
+					            </ul>
+					        </li>
+					    </ul>
+					    
+					    <ul id="menu"> 
+					        <li id="womens">
+					            <a id="womens-link" href="womengeneral.html">Womens</a>
+					            <ul id="submenu-womens">
+					                <li id="tops"><a id="tops-link" href="womentop.html">Tops</a></li>
+					                <li id="bottoms"><a id="bottoms-link" href="womentbottom.html">Bottoms</a></li>
+					            </ul>
+					        </li>
+					    </ul>
+					    
+					    <ul id="menu">
+					        <li id="food">
+					            <a id="food-link" href="food.html">Food</a>
+					            <ul id="submenu-food">
+					            	<li id="grocery"><a id="grocery-link" href="grocery.html">Grocery</a></li>
+					                <li id="meals"><a id="meals-link" href="meals.html">Pre-Made Meals</a></li>
+					            </ul>
+					        </li>
+					    </ul>
+					    <ul><button id="signout-btn" onclick="signOut()">Sign Out</button></ul>
+					</div>
+				</td>
+				
+				
+	            <td id="bannerimg"> <!-- This is the shopping cart image. -->
+					<a id="overlap-link" href="cart.html">
+			            <img id="overlap-image" src="cart.png" alt="Overlay">
+			        </a>
+				</td>
+	        </tr>
+	        <tr>
+	            <td>
+					<table id="products-table">
+				        <tr>
+				            <td id="p17-image">
+				                <img id="imgp17" src="p17.png" alt="Charcuterie Board​​">
+				            </td>
+				
+				            <!-- Product 17 Details -->
+				            <td id="product17-details">
+				                <table id="product17-inner-table">
+				                    <tr>
+				                        <td><label id="lblp17">Charcuterie Board​</label></td>
+				                    </tr>
+				                    <tr>
+				                        <td><label id="money">$</label><label id="lblp17price">112.00</label><label id="pricecount"> each</label></td> <!-- you will only change lblp#price here -->
+				                    </tr>
+				                    <tr>
+				                        <td><label id="lblp17quantity">Quantity: </label><label id="lblquantityp17num">1</label></td>
+				                        <td><button type="button" onclick="myFunction('btnaddp17')" id="btnaddp17">+</button></td>
+				                        <td><button type="button" onclick="myFunction('btnsubp17')" id="btnsubp17">-</button></td>
+				                    </tr>
+				                    <tr>
+				                        <td><button type="button" onclick="myFunction('btnp17cart')" id="btnp17cart">Add to Cart</button></td>
+				                    </tr>
+				                    <tr>
+				                    	<td><label id="lblconfirmp17"></label></td>
+				                    </tr>
+				                </table>
+				            </td>
+				
+				            <!-- Product 18 Image -->
+				            <td id="p18-image">
+				                <img id="imgp18" src="p18.png" alt="Beef Stew">
+				            </td>
+				
+				            <!-- Product 18 Details -->
+				            <td id="product18-details">
+				                <table id="product18-inner-table">
+				                    <tr>
+				                        <td><label id="lblp18">Beef Stew</label></td>
+				                    </tr>
+				                    <tr>
+				                        <td><label id="money">$</label><label id="lblp18price">20.99</label><label id="pricecount"> each</label></td>
+				                    </tr>
+				                    <tr>
+				                        <td><label id="lblp18quantity">Quantity: </label><label id="lblquantityp18num">1</label></td>
+				                        <td><button type="button" onclick="myFunction('btnaddp18')" id="btnaddp18">+</button></td>
+				                        <td><button type="button" onclick="myFunction('btnsubp18')" id="btnsubp18">-</button></td>
+				                    </tr>
+				                    
+				                    <tr>
+				                        <td><button type="button" onclick="myFunction('btnp18cart')" id="btnp18cart">Add to Cart</button></td>
+				                    </tr>
+				                    <tr>
+				                    	<td><label id="lblconfirmp18"></label></td>
+				                    </tr>
+				                </table>
+				            </tr>
+				            <tr>
+				            </td>
+				             <!-- Product 19 Image -->
+				            <td id="p19-image">
+				                <img id="imgp19" src="p19.png" alt="Turkey Leg">
+				            </td>
+				
+				            <!-- Product 19 Details -->
+				            <td id="product19-details">
+				                <table id="product19-inner-table">
+				                    <tr>
+				                        <td><label id="lblp19">Turkey Leg</label></td>
+				                    </tr>
+				                    <tr>
+				                        <td><label id="money">$</label><label id="lblp19price">100</label><label id="pricecount"> each</label></td>
+				                    </tr>
+				                    <tr>
+				                        <td><label id="lblp19quantity">Quantity: </label><label id="lblquantityp19num">1</label></td>
+				                        <td><button type="button" onclick="myFunction('btnaddp19')" id="btnaddp19">+</button></td>
+				                        <td><button type="button" onclick="myFunction('btnsubp19')" id="btnsubp19">-</button></td>
+				                    </tr>
+				                    <tr>
+				                        <td><button type="button" onclick="myFunction('btnp19cart')" id="btnp19cart">Add to Cart</button></td>
+				                    </tr>
+				                    <tr>
+				                    	<td><label id="lblconfirmp19"></label></td>
+				                    </tr>
+				                </table>
+				            </td>
+				             <!-- Product 20 Image -->
+				            <td id="p20-image">
+				                <img id="imgp20" src="p20.png" alt="Acorn Pasta">
+				            </td>
+				
+				            <!-- Product 20 Details -->
+				            <td id="product20-details">
+				                <table id="product20-inner-table">
+				                    <tr>
+				                        <td><label id="lblp20">Acorn Pasta</label></td>
+				                    </tr>
+				                    <tr>
+				                        <td><label id="money">$</label><label id="lblp20price">42.67</label><label id="pricecount"> each</label></td>
+				                    </tr>
+				                    <tr>
+				                        <td><label id="lblp20quantity">Quantity: </label><label id="lblquantityp20num">1</label></td>
+				                        <td><button type="button" onclick="myFunction('btnaddp20')" id="btnaddp20">+</button></td>
+				                        <td><button type="button" onclick="myFunction('btnsubp20')" id="btnsubp20">-</button></td>
+				                    </tr>
+				                    <tr>
+				                        <td><button type="button" onclick="myFunction('btnp20cart')" id="btnp20cart">Add to Cart</button></td>
+				                    </tr>
+				                    <tr>
+				                    	<td><label id="lblconfirmp20"></label></td>
+				                    </tr>
+				                </table>
+				            </td>
+				        </tr>
+				    </table>
+				</td>
+	        </tr>
+        </table>
+	</body>
+</html>

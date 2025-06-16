@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Credit Card Information</title>
+    <link rel="stylesheet" href="creditinfo.css">
+</head>
+<body>
+    <div id="form-container">
+        <h2>Enter Credit Card Information</h2>
+        
+        <table id="shipping-container">
+            <tr>
+                <td><label for="shipping-name">Full Name</label></td>
+                <td><input type="text" id="shipping-name" placeholder="Full Name"></td>
+            </tr>
+            <tr>
+                <td><label for="shipping-address">Shipping Address</label></td>
+                <td><input type="text" id="shipping-address" placeholder="Shipping Address"></td>
+            </tr>
+            <tr>
+                <td><label for="shipping-city">City</label></td>
+                <td><input type="text" id="shipping-city" placeholder="City"></td>
+            </tr>
+            <tr>
+                <td><label for="shipping-zip">ZIP Code</label></td>
+                <td><input type="text" id="shipping-zip" placeholder="ZIP Code"></td>
+            </tr>
+            <tr>
+                <td><label for="shipping-phone">Phone Number</label></td>
+                <td><input type="text" id="shipping-phone" placeholder="Phone Number"></td>
+            </tr>
+        </table>
+        
+        <h3>Credit Card Information</h3>
+        <table id="credit-card-container">
+            <tr>
+                <td><label for="card-number">Card Number</label></td>
+                <td><input type="text" id="card-number" placeholder="Card Number"></td>
+            </tr>
+            <tr>
+                <td><label for="expiry-date">Expiry Date</label></td>
+                <td><input type="text" id="expiry-date" placeholder="MM/YY"></td>
+            </tr>
+            <tr>
+                <td><label for="cvv">CVV</label></td>
+                <td><input type="text" id="cvv" placeholder="CVV"></td>
+            </tr>
+        </table>
+
+        <div id="order-summary">
+  
+   
+            <label>Shipping: Free</label>
+            <label id ="total"> </label>
+        </div>
+
+        <button id="place-order-btn">Place Order</button>
+    </div>
+
+    <script src="creditinfo.js"></script>
+</body>
+</html>

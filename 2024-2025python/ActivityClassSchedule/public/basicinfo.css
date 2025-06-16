@@ -1,0 +1,32 @@
+body
+{
+	background:#f0f4f8;
+	text-align:center;
+}
+table 
+{
+	background-color: #ffffff; 
+	border-radius: 12px;
+    display: inline-block;
+    margin: center;
+    border-collapse: collapse; 
+    width: 80%; 
+    text-align: left; 
+}
+
+td 
+{
+    padding: 10px; 
+}
+
+label 
+{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+div[id="verticalimage"] 
+{
+    display: inline block; 
+	text-align:center;
+}

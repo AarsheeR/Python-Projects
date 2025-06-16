@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<title>Courses Info</title>
+	    <link rel="stylesheet" href="courses.css">
+	    <script src="courses.js"></script>
+	    
+	</head>
+	<body>
+		<div id="verticalimage">
+	        <img src="hillcrestlettering.png" alt="Vertical Image" class="vertical-image">
+	    </div>
+		<h1>Courses Information</h1>
+		<h2>Enter the course information for the specified day and period.</h2>
+		<p><strong>There are 5 days and 8 periods each day. All information is required! If the period is Lunch, then the teacher name is not required. If the period is a free period, put N/A for the teacher and room.</strong></p>
+	    <div id="courseinfo">
+	    	<label id="lblday">Monday</label><br>
+	    	<label id="lblperiod">Period 1</label><br><br>
+	    	
+	        <label id="lblcoursename">Course Name:</label>
+	        <input type="text" id="txtcoursename" placeholder="Course Name" autofocus><br><br>
+	
+	        <label id="lblcourseteacher">Course Teacher (Last Name Only):</label>
+	        <input type="text" id="txtcourseteacher" placeholder="Course Teacher" ><br><br>
+	
+	        <label id="lblroomnum">Room Number:</label>
+	        <input type="text" id="txtroomnum" maxlength="4" placeholder="Room Number"><br><br>
+	
+	        <button type="button" id="btnsubmit">Submit</button>
+	    
+		</div>
+	</body>
+</html>

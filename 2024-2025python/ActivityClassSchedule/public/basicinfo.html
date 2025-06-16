@@ -1,0 +1,66 @@
+<html>
+	<head>
+		<title>Student Info</title>
+	    <link rel="stylesheet" href="basicinfo.css">
+	    <script src="basicinfo.js"></script>
+	    
+	</head>
+	<body>
+			<div id="verticalimage">
+	        <img src="hillcrestlettering.png" alt="Vertical Image" class="vertical-image">
+	    </div>
+		<h1>Student Info</h1>
+		<h2>Enter Basic Information - All info is required!</h2>
+	    <div id="basicinfo">
+	    	<table id="table">
+
+				<tr> 
+		        	<td> <label id="lblstdid">Student ID (MUST BE 9 DIGITS):</label></td>
+		        	<td> <input type="text" id="txtstdid" maxlength="9" autofocus placeholder="ID Number"></input></td>
+				</tr>
+				
+				<tr> 
+		        	<td> <label id="lblstdfname">Student First Name:</label></td>
+		        	<td> <input type="text" id="txtstdfname" placeholder="Student First name"></input></td>
+				</tr>
+				
+				<tr> 
+		        	<td> <label id="lblstdlname">Student Last Name:</label></td>
+		        	<td> <input type="text" id="txtstdlname" placeholder="Student Last Name"></input> </td>
+				</tr> 
+				
+				<tr> 
+		        	<td> <label id="lblgradelvl">Grade Level (9, 10, 11 or 12):</label> </td>
+		        	<td> <input type="text" id="txtgradelvl" maxlength="2" placeholder="Grade Level"></input> </td>
+				</tr> 
+				
+				<tr> 
+		        	<td> <label id="lblcfname">Counselor First Name:</label> </td>
+		        	<td> <input type="text" id="txtcfname" placeholder="Counselor First Name"></input> </td>
+				</tr> 
+				
+				<tr> 
+		        	<td> <label id="lblclname">Counselor Last Name:</label> </td>
+		        	<td> <input type="text" id="txtclname" placeholder="Counselor Last Name"></input> </td>
+				</tr> 
+				
+				<tr> 
+		        	<td> <label id="lblclass">Official Class (MUST BE 3 DIGITS/LETTERS):</label> </td>
+		        	<td>  <input type="text" id="txtclass" maxlength="3" placeholder="Official Class"></input> </td>
+				</tr> 
+				
+				<tr> 
+		        	<td> <label id="lblterm">Term (1 or 2):</label>  </td>
+		        	<td> <input type="text" id="txtterm" maxlength="1" placeholder="Term"></input> </td>
+				</tr>
+
+				<tr> 
+		        	<td> <label id="lblschool">School District:</label>  </td>
+		        	<td> <input type="text" id="txtschool" placeholder="School District"></input> </td>
+				</tr>
+		
+			</table>
+	        <br><br><button type="button" id="btnsubmit">Submit</button>
+		</div>
+	</body>
+</html>

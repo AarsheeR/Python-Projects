@@ -1,0 +1,205 @@
+html
+{
+	background-color:#f1ffe7;
+}
+body 
+{
+    font-family: Berlin Sans FB;
+}
+
+label[id="usermsg"]
+{
+	color:#FF1053;
+    margin-top:-30px;
+    margin-bottom:-100px;
+    padding: 10px 15px;
+    display: block;
+    background-color: #f1ffe7; 
+}
+
+td[id="bannerimg"] 
+{
+    position: relative; 
+    background: url('mengenbanner.png') no-repeat center center; 
+    background-size: cover; 
+    height: 220px; 
+    width: 90%;  
+}
+
+img[id="overlap-image"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80px; 
+    height: auto;
+}
+
+/* menu drop down */ 
+td
+{
+    text-align: center;
+    padding: 10px;
+}
+
+td[id="sidemenutable"]
+{
+	background-color:#3C787E;
+	height:100vh; 	
+}
+
+div[id="sidemenu"]
+{
+	width:200px;
+	margin-top:-100px;
+}
+
+a[id="home"]
+{
+	text-decoration:none;
+	padding: 10px 15px;
+	margin-bottom:-10px;
+}
+
+ul 
+{
+	text-align:center;
+    list-style: none;
+}
+
+li[id="mens"], li[id="womens"], li[id="food"] 
+{
+    position: relative;
+ 	padding-right: 43px;
+   
+}
+
+a[id="mens-link"], a[id="womens-link"], a[id="food-link"], a[id="home"], button[id="signout-btn"]
+{
+    text-decoration: none;
+    color: #f1ffe7;
+    margin-top:100px;
+    padding: 10px 15px;
+    display: block;
+    
+    background-color: #FF1053; 
+    border: 1px solid #f1ffe7; 
+    border-radius: 10px; 
+    box-shadow: 0 2px 5px;
+}
+
+button[id="signout-btn"]
+{
+	font-family: Berlin Sans FB;
+	width:73%;
+}
+
+ul[id="submenu-mens"], ul[id="submenu-womens"], ul[id="submenu-food"]
+{
+    list-style: none;
+    padding: 0;
+    position: absolute;  
+    background: #5C4033;
+    box-shadow: 0 2px 5px ;
+    display: none;
+}
+
+ul[id="submenu-food"]
+{
+	right: 25%;
+}
+
+ul[id="submenu-mens"], ul[id="submenu-womens"]
+{
+	right: 34%;
+}
+
+a[id="tops-link"], a[id="bottoms-link"], a[id="grocery-link"], a[id="meals-link"] 
+{
+    text-decoration: none;
+    color: #5C4033;
+    padding: 15px;
+    display: block;
+    background-color:#C1AE9F;
+}
+
+a[id="tops-link"]:hover, a[id="bottoms-link"]:hover, a[id="grocery-link"]:hover, a[id="meals-link"]:hover 
+{
+    background: #FF1053;
+}
+
+
+li[id="mens"]:hover ul[id="submenu-mens"], li[id="womens"]:hover ul[id="submenu-womens"], li[id="food"]:hover ul[id="submenu-food"] 
+{
+    display: block;
+}
+
+/* images row */
+
+table[id="nested-table"] {
+    width: 100%; 
+    text-align: center; 
+}
+
+/* Individual table cells */
+td[id="cell1"], td[id="cell2"], td[id="cell3"] {
+    padding: 10px; 
+}
+
+/*product info */
+table[id="products-table"] {
+    width: 100%;
+    text-align: center;
+}
+
+/* Product Images */
+img[id="imgp1"], img[id="imgp2"], img[id="imgp3"], img[id="imgp4"] {
+    width: 255px;
+    height: auto;
+}
+
+/* Inner Table for Product Details */
+table[id="product1-inner-table"], table[id^="product2-inner-table"], table[id^="product3-inner-table"], table[id^="product4-inner-table"] {
+    margin: auto;
+    text-align: left;
+    font-size: 18px;
+}
+
+label[id="lblp1"], label[id="lblp2"], label[id="lblp3"], label[id="lblp4"]
+{
+	font-size: 23px;
+	background-color:#C1AE9F;
+	color:#5C4033;
+}
+
+button[type="button"] {
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #5C4033;
+    color: #C1AE9F;
+    border: none;
+    font-family: Berlin Sans FB;
+    font-size: 18px;
+}
+
+button[type="button"]:hover {
+    background-color: #FF1053;
+}
+
+/* Dropdown Menu for Sizes */
+select[id="size-p1"], select[id="size-p2"], select[id="size-p3"],select[id="size-p4"] {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: Berlin Sans FB;
+    background-color:#f1ffe7;
+    font-size: 16px;
+}
+
+td[id="product1-details"], td[id="product2-details"], td[id="product3-details"], td[id="product4-details"] {
+    border: 2px solid #3C787E; 
+    border-radius: 10px;  
+    padding: 15px;
+    background-color: #3C787E;
+    width: 25%; 
+    margin: auto; 
+}
