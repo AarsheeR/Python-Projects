@@ -1,0 +1,84 @@
+<html>
+	<head>
+	    <title>TreasureMania Home Page</title>
+	    <link rel="shortcut icon" type="x-icon" href="logo.png"></link>
+	    <link rel="stylesheet" href="home.css">
+	    <script src="home.js"></script>
+	</head>
+	<body>
+		<table>
+	        <tr>
+	            <td id="sidemenutable" rowspan="2"> 
+		            <div id="sidemenu">
+		            	<label id="usermsg"></label><br>
+						<a id="home" href="home.html">Home</a>
+				    
+					    <ul id="menu">
+					        <li id="mens">
+					            <a id="mens-link" href="mengeneral.html">Mens</a>
+					            <ul id="submenu-mens">
+					                <li id="tops"><a id="tops-link" href="mentop.html">Tops</a></li>
+					                <li id="bottoms"><a id="bottoms-link" href="menbottom.html">Bottoms</a></li>
+					            </ul>
+					        </li>
+					    </ul>
+					    
+					    <ul id="menu"> 
+					        <li id="womens">
+					            <a id="womens-link" href="womengeneral.html">Womens</a>
+					            <ul id="submenu-womens">
+					                <li id="tops"><a id="tops-link" href="womentop.html">Tops</a></li>
+					                <li id="bottoms"><a id="bottoms-link" href="womentbottom.html">Bottoms</a></li>
+					            </ul>
+					        </li>
+					    </ul>
+					    
+					    <ul id="menu">
+					        <li id="food">
+					            <a id="food-link" href="food.html">Food</a>
+					            <ul id="submenu-food">
+					            	<li id="grocery"><a id="grocery-link" href="grocery.html">Grocery</a></li>
+					                <li id="meals"><a id="meals-link" href="meals.html">Pre-Made Meals</a></li>
+					            </ul>
+					        </li>
+					    </ul>
+					    <ul><button id="signout-btn" onclick="signOut()">Sign Out</button></ul>
+					</div>
+				</td>
+				
+				
+	            <td id="bannerimg">
+					<a id="overlap-link" href="cart.html">
+			            <img id="overlap-image" src="cart.png" alt="Overlay">
+			        </a>
+				</td>
+	        </tr>
+	        <tr>
+	            <td>
+					<table id="nested-table">
+			            <tr>
+			                <td id="cell1">
+			                    <div id="image-box-1">
+			                        <img id="image1" src="https://i.etsystatic.com/48445497/r/il/a4b8ad/6136265626/il_1080xN.6136265626_j8kp.jpg" alt="Mens Clothing"><br>
+			                        <a id="menlink2" href="mengeneral.html">Mens Clothing</a>
+			                    </div>
+			                </td>
+			                <td id="cell2">
+			                    <div id="image-box-2">
+			                        <img id="image2" src="https://i.etsystatic.com/53982510/r/il/34ebe1/6180095264/il_1080xN.6180095264_3s28.jpg" alt="Womens Clothing"><br>
+			                        <a id="womenlink2" href="womengeneral.html">Womens Clothing</a>
+			                    </div>
+			                </td>
+			                <td id="cell3">
+			                    <div id="image-box-3">
+			                        <img id="image3" src="foodhomepg.png" alt="Food"><br>
+			                        <a id="foodlink2" href="food.html">Food</a>
+			                    </div>
+			                </td>
+			            </tr>
+			        </table>
+				</td>
+	        </tr>
+        </table>
+	</body>
+</html>

@@ -1,0 +1,52 @@
+html
+{
+	background-color:#f1ffe7;
+}
+body 
+{
+    font-family: Berlin Sans FB;
+}
+button[id="btncheckout"]
+{
+    background-color: #ff1053; 
+    font-family: Berlin Sans FB;
+    width: 500px;
+    height: 70px;
+    font-size:30px;
+    border: none;
+    display: block;
+    margin: 10px;
+    color:#f1ffe7;
+}
+label[id="fmessg"]
+{
+	color:#ff1053;
+	font-size:20px;
+	display: block;
+    margin: 10px auto;
+}
+label[id="ffmessg"]
+{
+	color:#ff1053;
+	font-size:25px;
+	display: block;
+    margin: 10px auto;
+}
+img[id="pirateimgp"] {
+    width: 200px;
+    height: auto;
+    margin: 10px auto;
+}
+td[id="Pirateimgdetail"] {
+    border: 2px solid #94b659; 
+    border-radius: 10px; 
+    background-color: #f1ffe7;
+    height: 65px;
+    padding: 145px;
+}
+table[id="pirateinner"] {
+    margin: auto;
+    font-size: 18px;
+    color:#94b659;
+}
+

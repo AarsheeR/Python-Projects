@@ -1,0 +1,214 @@
+<html>
+	<head>
+	    <title>TreasureMania Mens General Page</title>
+		<link rel="shortcut icon" type="x-icon" href="logo.png"></link>
+	    <link rel="stylesheet" href="mengeneral.css">
+	    <script src="mengeneral.js"></script>
+	</head>
+	<body>
+		<table>
+	        <tr>
+	            <td id="sidemenutable" rowspan="2"> 
+		            <div id="sidemenu">
+		            	<label id="usermsg"></label><br>
+						<a id="home" href="home.html">Home</a>
+				    
+					    <ul id="menu">
+					        <li id="mens">
+					            <a id="mens-link" href="mengeneral.html">Mens</a>
+					            <ul id="submenu-mens">
+					                <li id="tops"><a id="tops-link" href="mentop.html">Tops</a></li>
+					                <li id="bottoms"><a id="bottoms-link" href="menbottom.html">Bottoms</a></li>
+					            </ul>
+					        </li>
+					    </ul>
+					    
+					    <ul id="menu"> 
+					        <li id="womens">
+					            <a id="womens-link" href="womengeneral.html">Womens</a>
+					            <ul id="submenu-womens">
+					                <li id="tops"><a id="tops-link" href="womentop.html">Tops</a></li>
+					                <li id="bottoms"><a id="bottoms-link" href="womentbottom.html">Bottoms</a></li>
+					            </ul>
+					        </li>
+					    </ul>
+					    
+					    <ul id="menu">
+					        <li id="food">
+					            <a id="food-link" href="food.html">Food</a>
+					            <ul id="submenu-food">
+					            	<li id="grocery"><a id="grocery-link" href="grocery.html">Grocery</a></li>
+					                <li id="meals"><a id="meals-link" href="meals.html">Pre-Made Meals</a></li>
+					            </ul>
+					        </li>
+					    </ul>
+					    <ul><button id="signout-btn" onclick="signOut()">Sign Out</button></ul>
+					</div>
+				</td>
+				
+				
+	            <td id="bannerimg"> <!-- This is the shopping cart image. -->
+					<a id="overlap-link" href="cart.html">
+			            <img id="overlap-image" src="cart.png" alt="Overlay">
+			        </a>
+				</td>
+	        </tr>
+	        <tr>
+	            <td>
+					<table id="products-table">
+				        <tr>
+				            <!-- Product 1 Image: you change this for each product. you should have aleast 2-4 products for each product page.  -->
+				            <td id="p1-image">
+				                <img id="imgp1" src="p1.png" alt="Pirate's Red Shirt">
+				            </td>
+				
+				            <!-- Product 1 Details -->
+				            <td id="product1-details">
+				                <table id="product1-inner-table">
+				                    <tr>
+				                        <td><label id="lblp1">Pirate's Red Shirt</label></td>
+				                    </tr>
+				                    <tr>
+				                        <td><label id="money">$</label><label id="lblp1price">75.99</label><label id="pricecount"> each</label></td> 
+				                    </tr>
+				                    <tr>
+				                        <td><label id="lblp1quantity">Quantity: </label><label id="lblquantityp1num">1</label></td>
+				                        <td><button type="button" onclick="myFunction('btnaddp1')" id="btnaddp1">+</button></td>
+				                        <td><button type="button" onclick="myFunction('btnsubp1')" id="btnsubp1">-</button></td>
+				                    </tr>
+				                    <tr>
+				                        <td>
+				                            <select id="size-p1">
+				                            	<option value="size">Size</option>
+				                                <option value="small">Small</option>
+				                                <option value="medium">Medium</option>
+				                                <option value="large">Large</option>
+				                            </select>
+				                        </td>
+				                    </tr>
+				                    <tr>
+				                        <td><button type="button" onclick="myFunction('btnp1cart')" id="btnp1cart">Add to Cart</button></td>
+				                    </tr>
+				                    <tr>
+				                    	<td><label id="lblconfirmp1"></label></td>
+				                    </tr>
+				                </table>
+				            </td>
+				
+				            <!-- Product 2 Image -->
+				            <td id="p2-image">
+				                <img id="imgp2" src="p2.png" alt="Flared Black Pants">
+				            </td>
+				
+				            <!-- Product 2 Details -->
+				            <td id="product2-details">
+				                <table id="product2-inner-table">
+				                    <tr>
+				                        <td><label id="lblp2">Flared Black Pants</label></td>
+				                    </tr>
+				                    <tr>
+				                        <td><label id="money">$</label><label id="lblp2price">59.99</label><label id="pricecount"> each</label></td>
+				                    </tr>
+				                    <tr>
+				                        <td><label id="lblp2quantity">Quantity: </label><label id="lblquantityp2num">1</label></td>
+				                        <td><button type="button" onclick="myFunction('btnaddp2')" id="btnaddp2">+</button></td>
+				                        <td><button type="button" onclick="myFunction('btnsubp2')" id="btnsubp2">-</button></td>
+				                    </tr>
+				                    <tr>
+				                        <td>
+				                            <select id="size-p2">
+				                            	<option value="size">Size</option>
+				                                <option value="small">Small</option>
+				                                <option value="medium">Medium</option>
+				                                <option value="large">Large</option>
+				                            </select>
+				                        </td>
+				                    </tr>
+				                    <tr>
+				                        <td><button type="button" onclick="myFunction('btnp2cart')" id="btnp2cart">Add to Cart</button></td>
+				                    </tr>
+				                    <tr>
+				                    	<td><label id="lblconfirmp2"></label></td>
+				                    </tr>
+				                </table>
+				        </tr>    
+				        <tr>
+				                <!-- Product 3 Image -->
+				            <td id="p3-image">
+				                <img id="imgp3" src="p3.png" alt="Pirate long coat">
+				            </td>
+				          
+				          	 <!-- Product 3 Details -->
+				            	<td id="product3-details">
+				                	<table id="product3-inner-table">
+				                    	<tr>
+				                        	<td><label id="lblp3">Pirate Long Coat</label></td>
+				                    	</tr>
+				                    	<tr>
+				                        	<td><label id="money">$</label><label id="lblp3price">62.59</label><label id="pricecount"> each</label></td>
+				                    	</tr>
+				                    	<tr>
+				                        	<td><label id="lblp3quantity">Quantity: </label><label id="lblquantityp3num">1</label></td>
+				                        	<td><button type="button" onclick="myFunction('btnaddp3')" id="btnaddp3">+</button></td>
+				                        	<td><button type="button" onclick="myFunction('btnsubp3')" id="btnsubp3">-</button></td>
+				                    	</tr>
+				                    	<tr>
+				                        <td>
+				                            <select id="size-p3">
+				                            	<option value="size">Size</option>
+				                                <option value="small">Small</option>
+				                                <option value="medium">Medium</option>
+				                                <option value="large">Large</option>
+				                            </select>
+				                        </td>
+				                    </tr>
+				                    <tr>
+				                      	<td><button type="button" onclick="myFunction('btnp3cart')" id="btnp3cart">Add to Cart</button></td>
+				                   </tr>
+				                   <tr>
+				                    	<td><label id="lblconfirmp3"></label></td>
+				                    </tr>
+				           </table>
+				                <!-- Product 4 Image -->
+				            <td id="p4-image">
+				                <img id="imgp4" src="p4.png" alt="Pirate Hats">
+				            </td>
+				          
+				          	 <!-- Product 4 Details -->
+				            	<td id="product4-details">
+				                	<table id="product4-inner-table">
+				                    	<tr>
+				                        	<td><label id="lblp4">Pirate Hat</label></td>
+				                    	</tr>
+				                    	<tr>
+				                        	<td><label id="money">$</label><label id="lblp4price">45.30</label><label id="pricecount"> each</label></td>
+				                    	</tr>
+				                    	<tr>
+				                        	<td><label id="lblp4quantity">Quantity: </label><label id="lblquantityp4num">1</label></td>
+				                        	<td><button type="button" onclick="myFunction('btnaddp4')" id="btnaddp4">+</button></td>
+				                        	<td><button type="button" onclick="myFunction('btnsubp4')" id="btnsubp4">-</button></td>
+				                    	</tr>
+				                    	<tr>
+				                        <td>
+				                            <select id="size-p4">
+				                            	<option value="size">Size</option>
+				                                <option value="small">Small</option>
+				                                <option value="medium">Medium</option>
+				                                <option value="large">Large</option>
+				                            </select>
+				                        </td>
+				                    </tr>
+				                    	
+				                    <tr>
+				                      	<td><button type="button" onclick="myFunction('btnp4cart')" id="btnp4cart">Add to Cart</button></td>
+				                   </tr>
+				                   <tr>
+				                    	<td><label id="lblconfirmp4"></label></td>
+				                    </tr>
+				           </table>
+				</td>
+	        </tr>
+        </table>
+  </table>
+	</body>
+</html>

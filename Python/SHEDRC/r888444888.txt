@@ -1,0 +1,8 @@
+-------------
+Report Card
+Name: Garfield
+Grade Level (1-12): 12
+Course: math
+Grade: 100
+Average: 100.00
+-------------

@@ -1,0 +1,101 @@
+html {
+    background-color: #F6E8D6;
+}
+
+body {
+    font-family: Berlin Sans FB;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    text-align: center;
+}
+
+a[id="home"] {
+    text-decoration: none;
+    padding: 10px 15px;
+    color: #F6E8D6;
+    background-color: #5C4033;
+    border: 1px solid #C1AE9F;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px  ;
+    display: block;
+    width: 150px;
+    margin: 20px auto;
+    text-align: center;
+    font-weight: bold;
+}
+
+a[id="home"]:hover {
+    background-color: #FF1053;
+    color: white;
+    box-shadow: 0 6px 12px;
+}
+
+td[id="emptyrow"], td[id="homebtntd"] {
+    width: 300px;
+}
+
+table[id="cartpagelayout"] {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #FFF9F0;
+    border: 2px solid #C1AE9F;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px ;
+}
+
+td[id="productdisplay"] {
+    width: 600px;
+    vertical-align: top;
+    padding: 10px;
+}
+
+table[id="productsNtotal"] {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+tr[id="products"] td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #E0D7C6;
+    font-size: 16px;
+}
+
+td[id="totalprice"] {
+    font-size: 20px;
+    font-weight: bold;
+    color: #5C4033;
+    padding: 15px;
+    background-color: #FDF7ED;
+    border-radius: 5px;
+}
+
+label[id="finalprice"] {
+    font-size: 20px;
+    color: black;
+}
+
+a[id="checkout"] {
+    text-decoration: none;
+}
+
+button[id="checkoutbtn"], button[id="clearAllButton"] {
+    padding: 10px 15px;
+    background-color: #5C4033;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    font-size: 16px;
+}
+
+button[id="checkoutbtn"]:hover, button[id="clearAllButton"]:hover {
+    background-color: #FF1053;
+}
+
+tr[id="clearbtncell"] td {
+    text-align: center;
+    padding: 10px;
+}

@@ -1,0 +1,123 @@
+<html>
+	<head>
+	    <title>TreasureMania Food Page</title>
+		 <link rel="shortcut icon" type="x-icon" href="logo.png"></link>
+	    <link rel="stylesheet" href="meals.css">
+	    <script src="meals.js"></script>
+	</head>
+	<body>
+		<table>
+	        <tr>
+	            <td id="sidemenutable" rowspan="2">
+		            <div id="sidemenu">
+		            <label id="usermsg"></label><br>
+						<a id="home" href="home.html">Home</a>
+				    
+					    <ul id="menu">
+					        <li id="mens">
+					            <a id="mens-link" href="mengeneral.html">Mens</a>
+					            <ul id="submenu-mens">
+					                <li id="tops"><a id="tops-link" href="mentop.html">Tops</a></li>
+					                <li id="bottoms"><a id="bottoms-link" href="menbottom.html">Bottoms</a></li>
+					            </ul>
+					        </li>
+					    </ul>
+					    
+					    <ul id="menu"> 
+					        <li id="womens">
+					            <a id="womens-link" href="womengeneral.html">Womens</a>
+					            <ul id="submenu-womens">
+					                <li id="tops"><a id="tops-link" href="womentop.html">Tops</a></li>
+					                <li id="bottoms"><a id="bottoms-link" href="womentbottom.html">Bottoms</a></li>
+					            </ul>
+					        </li>
+					    </ul>
+					    
+					    <ul id="menu">
+					        <li id="food">
+					            <a id="food-link" href="food.html">Food</a>
+					            <ul id="submenu-food">
+					            	<li id="grocery"><a id="grocery-link" href="grocery.html">Grocery</a></li>
+					                <li id="meals"><a id="meals-link" href="meals.html">Pre-Made Meals</a></li>
+					            </ul>
+					        </li>
+					    </ul>
+					    <ul><button id="signout-btn" onclick="signOut()">Sign Out</button></ul>
+					</div>
+				</td>
+				
+				
+	            <td id="bannerimg"> <!-- This is the shopping cart image. -->
+					<a id="overlap-link" href="cart.html">
+			            <img id="overlap-image" src="cart.png" alt="Overlay">
+			        </a>
+				</td>
+	        </tr>
+	        <tr>
+	            <td>
+					<table id="products-table">
+				        <tr>
+				            <!-- Product 25 Image: you change this for each product. you should have aleast 2-4 products for each product page.  -->
+				            <td id="p25-image">
+				                <img id="imgp25" src="p25.png" alt="Vegan Potage Stew">
+				            </td>
+				
+				            <!-- Product 25 Details -->
+				            <td id="product25-details">
+				                <table id="product25-inner-table">
+				                    <tr>
+				                        <td><label id="lblp25">Vegan Potage Stew</label></td>
+				                    </tr>
+				                    <tr>
+				                        <td><label id="money">$</label><label id="lblp25price">112.00</label><label id="pricecount"> each​​</label></td> <!-- you will only change lblp#price here -->
+				                    </tr>
+				                    <tr>
+				                        <td><label id="lblp25quantity">Quantity: </label><label id="lblquantityp25num">1</label></td>
+				                        <td><button type="button" onclick="myFunction('btnaddp25')" id="btnaddp25">+</button></td>
+				                        <td><button type="button" onclick="myFunction('btnsubp25')" id="btnsubp25">-</button></td>
+				                    </tr>
+				                    
+				                    <tr>
+				                        <td><button type="button" onclick="myFunction('btnp25cart')" id="btnp25cart">Add to Cart</button></td>
+				                    </tr>
+				                    <tr>
+				                    	<td><label id="lblconfirmp25"></label></td>
+				                    </tr>
+				                </table>
+				            </td>
+				
+				            <!-- Product 26 Image -->
+				            <td id="p26-image">
+				                <img id="imgp26" src="p26.png" alt="​Roasted Chicken">
+				            </td>
+				
+				            <!-- Product 26 Details -->
+				            <td id="product26-details">
+				                <table id="product26-inner-table">
+				                    <tr>
+				                        <td><label id="lblp26">Roasted Chicken​​</label></td>
+				                    </tr>
+				                    <tr>
+				                        <td><label id="money">$</label><label id="lblp26price">20.99</label><label id="pricecount"> each​​</label></td>
+				                    </tr>
+				                    <tr>
+				                        <td><label id="lblp26quantity">Quantity: </label><label id="lblquantityp26num">1</label></td>
+				                        <td><button type="button" onclick="myFunction('btnaddp26')" id="btnaddp26">+</button></td>
+				                        <td><button type="button" onclick="myFunction('btnsubp26')" id="btnsubp26">-</button></td>
+				                    </tr>
+				                    
+				                    <tr>
+				                        <td><button type="button" onclick="myFunction('btnp26cart')" id="btnp26cart">Add to Cart</button></td>
+				                    </tr>
+				                    <tr>
+				                    	<td><label id="lblconfirmp26"></label></td>
+				                    </tr>
+				                </table>
+				            </td>
+				        </tr>
+				    </table>
+				</td>
+	        </tr>
+        </table>
+	</body>
+</html>

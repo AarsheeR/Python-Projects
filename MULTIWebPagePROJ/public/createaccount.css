@@ -1,0 +1,52 @@
+body {
+    background-color: #C1AE9F;
+    font-family: Berlin Sans FB;
+    color: black;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+div[id="create-account-container"] {
+    background-color: #f1ffe7;
+    margin: 50px auto;
+    padding: 20px;
+    width: 300px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+h2 {
+    color: #5C4033;
+}
+
+label[id="lblnew-user"],
+label[id="lblnew-password"],
+label[id="lblretyped-password"] {
+    display: block;
+    margin: 10px 0 5px 0;
+}
+
+input[id="new-user"],
+input[id="new-password"],
+input[id="retyped-password"] {
+    width: 95%;
+    padding: 8px;
+    margin: 5px 0 15px 0;
+    border: 1px solid gray;
+    border-radius: 3px;
+}
+
+button[id="create-account-submit"] {
+    width: 95%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #5C4033;
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+
+button[id="create-account-submit"]:hover {
+    background-color: #FF1053;
+}
